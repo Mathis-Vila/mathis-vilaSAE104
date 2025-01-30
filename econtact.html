@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact&merci.css"> <!-- Lien vers le fichier CSS pour le style -->
+</head>
+<body>
+
+    <!-- Menu de navigation - Liens vers les autres pages -->
+    <nav>
+        <a href="eindex.html">Home</a> <!-- Lien vers la page d'accueil -->
+        <a href="ecv.html">My CV</a> <!-- Lien vers la page CV -->
+        <a href="eportfolio.html">Portfolio</a> <!-- Lien vers la page portfolio -->
+        <a href="econtact.html">Contact</a> <!-- Lien vers la page contact -->
+   <!-- Boutons de changement de langue -->
+<div class="language-switcher">
+    <a href="contact.html" class="lang-button">Français</a> <!-- Lien vers la version française de la page de contact -->
+    <a href="econtact.html" class="lang-button">English</a> <!-- Lien vers la version anglaise de la page de contact -->
+</div>
+    </nav>
+    
+    <header>
+        <h1>Contact Me</h1> <!-- Titre principal pour la page de contact -->
+    </header>
+  <!-- Boutons de changement de langue -->
+  <div class="language-switcher">
+    <a href="contact.html" class="lang-button">Français</a> <!-- Lien vers la version française de la page de contact -->
+    <a href="econtact.html" class="lang-button">English</a> <!-- Lien vers la version anglaise de la page de contact -->
+</div>
+    <main>
+        <form action="emerci.html" method="POST"> <!-- Formulaire qui envoie les données vers merci.html -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required> <!-- Champ de saisie pour le nom, requis -->
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required> <!-- Champ de saisie pour l'email, format validé -->
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea> <!-- Zone de texte pour le message -->
+
+            <button type="submit">Send</button> <!-- Bouton pour soumettre le formulaire -->
+        </form>
+    </main>
+
+    <!-- Boutons de changement de langue -->
+    <div class="language-switcher">
+        <a href="contact.html" class="lang-button">Français</a> <!-- Lien vers la version française de la page de contact -->
+        <a href="econtact.html" class="lang-button">English</a> <!-- Lien vers la version anglaise de la page de contact -->
+    </div>
+    
+    <!-- Pied de page -->
+    <footer>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="eindex.html">Home</a></li>
+                <li><a href="ecv.html">CV</a></li>
+                <li><a href="eportfolio.html">portfolio</a></li>
+                <li><a href="econtact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="footer-content">
+            <p>&copy; 2024 Mathis Vila | All rights reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>

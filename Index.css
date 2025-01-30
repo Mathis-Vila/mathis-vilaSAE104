@@ -1,0 +1,166 @@
+/* CSS DE L'INDEX */
+
+/* Style global - Le corps entier */
+body {
+    font-family: 'Poppins', sans-serif; /* Police moderne et clean */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f9f9f9, #e0e0e0); /* Fond avec dégradé doux */
+    color: #333; /* Couleur de texte pr la lisibilité */
+    display: flex;
+    flex-direction: column; /* Permet d'agencer les sections verticalement */
+    min-height: 100vh; /* Minimum pr occuper tt l'écran */
+}
+
+/* En-tête - La bannière principale */
+header {
+    background: linear-gradient(135deg, #1c1c1c, #4f4f4f); /* Dégradé du foncé au gris */
+    color: #fff; /* Texte blanc pr contraster */
+    padding: 20px 0; /* Espacement vertical */
+    text-align: center; /* Centrer le titre */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre douce */
+}
+header h1 {
+    margin: 0; /* Suppr les marges par défaut */
+    font-size: 2.5em; /* Taille du titre */
+    font-weight: bold; /* Gras */
+    letter-spacing: 2px; /* Espacement entre les lettres */
+}
+
+/* Menu de navigation principal */
+nav {
+    display: flex;
+    justify-content: center; /* Aligne les liens au centre */
+    background: #2c2c2c; /* Fond gris foncé */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Effet d'ombre */
+    padding: 0;
+    margin: 0;
+}
+nav a {
+    color: #f0f0f0; /* Texte clair */
+    text-decoration: none; /* Suppr le soulignement */
+    padding: 15px 25px; /* Marges internes des liens */
+    font-size: 1.1em; /* Taille moyenne */
+    font-weight: 500; /* Un peu de gras */
+    transition: background 0.3s, color 0.3s; /* Animations pr les survols */
+}
+nav a:hover {
+    background-color: #4f4f4f; /* Change le fond au survol */
+    color: #fff; /* Texte devient blanc */
+    border-radius: 5px; /* Angles arrondis */
+}
+
+/* Contenu principal - Section centrale */
+main {
+    flex: 1; /* Prend tt l'espace dispo */
+    display: flex;
+    flex-direction: column; /* Organisation verticale */
+    align-items: center; /* Centrage horizontal */
+    justify-content: center; /* Centrage vertical */
+    text-align: center; /* Texte centré */
+    padding: 20px; /* Espacement global */
+    color: #333; /* Texte lisible */
+}
+main h2 {
+    font-size: 2.5em; /* Taille du sous-titre */
+    color: #1c1c1c; /* Noir intense pr contrasté */
+    margin-bottom: 10px; /* Espacement sous le titre */
+    border-bottom: 2px solid #4f4f4f; /* Ligne décorative */
+    display: inline-block; /* Garde largeur ajustée au texte */
+    padding-bottom: 5px; /* Espacement avec la ligne */
+}
+main p {
+    font-size: 1.2em; /* Texte assez grand */
+    max-width: 800px; /* Limite la largeur pr la lisibilité */
+    line-height: 1.6; /* Espacement entre les lignes */
+    margin: 0 auto; /* Centrage auto */
+    color: #4f4f4f; /* Texte en gris doux */
+}
+/* Contact Button - Centrer et ajouter un fond bleu */
+.contact-button {
+    display: inline-block; /* Pour que le bouton soit en ligne et se centre */
+    padding: 15px 30px; /* Espacement interne du bouton */
+    background-color: #007bff; /* Fond bleu */
+    color: white; /* Texte en blanc */
+    text-decoration: none; /* Supprime le soulignement */
+    font-size: 1.2em; /* Taille du texte */
+    border-radius: 5px; /* Bords arrondis */
+    text-align: center; /* Centre le texte dans le bouton */
+    margin-top: 20px; /* Espace au-dessus du bouton */
+    transition: background-color 0.3s, color 0.3s; /* Animation de transition */
+    width: auto; /* Laisse la largeur s'adapter au contenu */
+}
+
+.contact-button:hover {
+    background-color: #0056b3; /* Fond bleu plus foncé au survol */
+    color: #fff; /* Garde le texte blanc au survol */
+}
+
+/* Pied de page - Bas de page */
+footer {
+    background-color: #2c2c2c; /* Fond noir */
+    color: #f4f4f4; /* Texte clair */
+    text-align: center; /* Centré */
+    padding: 20px 10px; /* Espacement */
+    font-size: 0.9em; /* Taille réduite */
+}
+
+/* Menu de navigation dans le pied de page */
+footer nav.footer-nav {
+    display: flex;
+    flex-direction: column; /* Alignement vertical */
+    text-align: left; /* Texte aligné à gauche */
+    background-color: #2c2c2c;
+    padding: 20px 10px;
+}
+
+
+
+.language-switcher {
+    text-align: right; /* Aligne le texte à droite */
+    margin: 20px; /* Un peu d'espace autour */
+}
+
+.language-switcher a {
+    margin: 0 10px; /* Ajoute un espacement entre les boutons */
+}
+
+
+footer nav.footer-nav ul {
+    list-style-type: none; /* Pas de puces */
+    padding: 0;
+    margin: 0;
+}
+
+footer nav.footer-nav li {
+    margin-bottom: 10px; /* Espacement entre les éléments */
+}
+
+footer nav.footer-nav a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+footer nav.footer-nav a:hover {
+    color: #cccccc; /* Couleur du texte au survol */
+    text-decoration: underline; /* Souligné au survol */
+}
+
+/* Responsive - Adaptation mobile */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Taille réduite pr petits écrans */
+    }
+    nav a {
+        padding: 10px 15px; /* Moins d'espace */
+        font-size: 1em; /* Police plus petite */
+    }
+    main h2 {
+        font-size: 2em; /* Sous-titre réduit */
+    }
+    main p {
+        font-size: 1em; /* Texte plus petit */
+        padding: 0 10px; /* Réduction des marges */
+    }
+}

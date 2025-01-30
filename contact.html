@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"> <!-- Encodage des caractères pour éviter les bugs avec les accents -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Pour que ça soit bien responsive (sur mobile aussi) -->
+    <title>Contact</title> <!-- Titre qui s'affiche dans l'onglet du navigateur -->
+    <link rel="stylesheet" href="contact&merci.css"> <!-- Lien vers mon CSS -->
+</head>
+<body>
+
+    <!-- Menu de navigation - Liens vers les autres pages -->
+    <nav>
+        <a href="index.html">Accueil</a> <!-- Retour à la page d'accueil -->
+        <a href="cv.html">Mon CV</a> <!-- Page du CV -->
+        <a href="portfolio.html">Portfolio</a> <!-- Page pr voir les réalisations -->
+        <a href="contact.html">Contact</a> <!-- Page pr me contacter -->
+    </nav>
+ 
+    <header>
+        <h1>Contactez-moi</h1> <!-- Titre principal de la page -->
+    </header>
+<!-- Boutons de changement de langue -->
+<div class="language-switcher">
+    <a href="contact.html" class="lang-button">Français</a> <!-- Lien vers la version française de la page de contact -->
+    <a href="econtact.html" class="lang-button">English</a> <!-- Lien vers la version anglaise de la page de contact -->
+    <main>
+        <form action="emerci.html" method="POST"> <!-- Formulaire qui envoie les données à contact.php -->
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required> <!-- Champ pour le nom, obligatoire -->
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required> <!-- Champ pour l'email, format vérifié -->
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea> <!-- Zone de texte pour le message -->
+
+            <button type="submit">Envoyer</button> <!-- Bouton pour envoyer le formulaire -->
+        </form>
+    </main>
+
+  <!-- Pied de page -->
+  <footer>
+    <nav class="footer-nav">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="portfolio.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="footer-content">
+        <p>&copy; 2024 Mathis Vila | Tous droits réservés</p>
+    </div>
+</footer>
+
+
+
+
+</body>
+</html>
